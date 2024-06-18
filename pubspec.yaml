@@ -19,7 +19,7 @@ dependencies:
   riverpod_clean_architecture_lib:
     git:
       url: https://github.com/donghyun-Kim0405/riverpod_clean_architecture_lib.git
-      ref: master
+      ref: v1.0.1
 
 dev_dependencies:
   flutter_test:
