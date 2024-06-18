@@ -127,49 +127,55 @@ class DefaultColor {
 
 class DefaultTextStyle {
 
-  final String fontFamily = RiverpodCleanArchitecture.ui.fontFamily;
-
   TextStyle blackw400 = const TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.w400,
+    fontFamily: fontFamily
   );
 
   TextStyle blackw500 = const TextStyle(
     color: Colors.black,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   TextStyle blackw600 = const TextStyle(
     color: Colors.black,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w600
+    fontFamily: fontFamily,,
   );
 
   TextStyle blackw700 = const TextStyle(
     color: Colors.black,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w700
+    fontFamily: fontFamily,,
   );
 
   TextStyle whitew400 = const TextStyle(
     color: Colors.white,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w400
+    fontFamily: fontFamily,,
   );
 
   TextStyle whitew500 = const TextStyle(
     color: Colors.white,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w500
+    fontFamily: fontFamily,,
   );
 
   TextStyle whitew600 = const TextStyle(
     color: Colors.white,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w600
+    fontFamily: fontFamily,,
   );
 
   TextStyle whitew700 = const TextStyle(
     color: Colors.white,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w700
+    fontFamily: fontFamily,,
   );
 
-
+  final String fontFamily;
   final TextStyle linkPreViewTitleTextStyle;
   final TextStyle linkPreViewBodyTextStyle;
   final TextStyle bottomSheetBtnTextStyle;
@@ -181,6 +187,7 @@ class DefaultTextStyle {
   final TextStyle timePickerBtnTextStyle;
 
   DefaultTextStyle({
+    required this.fontFamily,
     required this.linkPreViewTitleTextStyle,
     required this.linkPreViewBodyTextStyle,
     required this.bottomSheetBtnTextStyle,

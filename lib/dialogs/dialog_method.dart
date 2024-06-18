@@ -2,15 +2,14 @@
 import 'package:daniel_ui_template_lib/dialogs/screens/full_image_dialog_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:riverpod_clean_architecture_lib/managers/view_route_manager.dart';
 
 showCustomDialog({
-  BuildContext? context,
+  BuildContext context,
   required Widget widget,
   bool canDismissible = true
 }) {
   showGeneralDialog(
-    context: context ?? RouteManager.instance.appContext,
+    context: context,
     pageBuilder: (context, anim1, anim2) {
       return SizedBox.expand(
         child: Column(
@@ -22,7 +21,7 @@ showCustomDialog({
       );
     },
     barrierDismissible: canDismissible,
-    barrierLabel: MaterialLocalizations.of(RouteManager.instance.appContext).modalBarrierDismissLabel,
+    barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
     barrierColor: Colors.black45,
     transitionDuration: Duration(milliseconds: 200),
   );

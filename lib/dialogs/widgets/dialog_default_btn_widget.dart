@@ -29,7 +29,7 @@ class DialogDefaultBtnWidget extends StatelessWidget {
             title,
             style: TextStyle(
                 fontWeight: FontWeight.w600,
-                fontFamily: RiverpodCleanArchitecture.ui.fontFamily,
+                fontFamily: CustomTheme.textStyle.fontFamily,
                 fontSize: 16,
                 color: textColor
               )

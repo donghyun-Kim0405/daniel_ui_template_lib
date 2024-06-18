@@ -3,7 +3,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:riverpod_clean_architecture_lib/managers/view_route_manager.dart';
 import 'package:riverpod_clean_architecture_lib/utils/size_util.dart';
 
 class FullImageDialogScreen extends StatelessWidget {
@@ -37,7 +36,7 @@ class FullImageDialogScreen extends StatelessWidget {
             top: 20,
             right: 20,
             child: GestureDetector(
-              onTap: () => RouteManager.instance.pop(context: context),
+              onTap: () => Navigator.of(context).pop,
               child: Container(
                   width: 30,
                   height: 30,
